@@ -58,9 +58,16 @@ marked "done."
 
 BUT I WANT MORE COMPLEX FUNCTIONALITY!
 --------------------------------------
-You mean you want to change priorities, add "contexts" and "projects," and so
-on? Well, the best way to do that isn't with some silly indicator -- it's with
-your trusty text editor! That's the whole beauty of the todo.txt system.
+If you mean that you want to filter based on a specific context or project, 
+no problem.  Todo-Indicator can now do just that.  Just pass the filter in on 
+the command line.
+
+    $ ./todo_indicator.py -f @Work ~/todo.txt
+    
+If, however, you mean you want to change priorities, add "contexts" and 
+"projects," and so on? Well, the best way to do that isn't with some 
+silly indicator -- it's with your trusty text editor! That's the whole 
+beauty of the todo.txt system.
 
 Click "Edit todo.txt" and your todo list will pop open in your text editor of
 choice. (Or your OS's text editor of choice, at least -- it uses `xdg-open`.)
