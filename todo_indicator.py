@@ -17,7 +17,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # William Blanchard
-# Updated to accept a filter allowing a user to select either a context
+# 3/6/2017 - Updated to accept a filter allowing a user to select either a context
+# 3/7/2017 - Updated to work with either python2 or python3
 # or a project
 
 
