@@ -52,7 +52,7 @@ class TodoIndicator(object):
         if task_filter:
             self.task_filter = task_filter
         else:
-            self.task_filter = None
+            self.task_filter = ""
 
         #self.todo_list = ""
         # Menu items (aside from the todo items themselves). An association of
