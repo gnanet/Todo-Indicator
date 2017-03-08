@@ -114,11 +114,12 @@ class TodoIndicator(object):
     def load_todo_file(self):
         """Populates the list of todo items from the todo file."""
         try:
-            with open(self.todo_filename, 'r') as f:
-                todo_list = f.read().split("\n")
-                # kill empty items/lines, sort list alphabetically (but with
-                # checked-off items bumped to end of the list):
-                self.todo_list = sorted(filter(self.check_item_for_filter, todo_list),
+            str_list = list() 
+            with open(self.todo_filename, 'r+') as f:
+                for line in f:
+                    if line and line.strip():
+                        str_list.append(line.strip("\n"))
+                self.todo_list = sorted(filter(self.check_item_for_filter, str_list),
                     key=lambda a: 'z' * 10 + a if a[:2] == 'x ' else a)
         except IOError:
             print("Error opening file:\n" + self.todo_filename)
@@ -131,9 +132,9 @@ class TodoIndicator(object):
         off. Also, you're stupid for doing that."""
         for line in fileinput.input(self.todo_filename, inplace=1):
             if line.strip() == label.strip():
-                print("x " + line,) # magic!
+                print("x %s" % line.strip("\n"))
             else:
-                print(line,)
+                print("%s" % line.strip("\n")) 
 
     def remove_checked_off_items(self):
         """Remove checked items from the file itself."""
@@ -141,7 +142,7 @@ class TodoIndicator(object):
             if line[:2] == 'x ':
                 pass
             else:
-                print(line,)
+                print("%s" % line.strip("\n")) 
 
     def check_off_handler(self, menu_item):
         """Callback to check items off the list."""
