@@ -33,6 +33,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GObject
 gi.require_version('AppIndicator3', '0.1')
 from gi.repository import AppIndicator3 as appindicator
+from os.path import expanduser
 
 
 PANEL_ICON = "todo-indicator"
@@ -54,7 +55,23 @@ class TodoIndicator(object):
         else:
             self.task_filter = ""
 
-        #self.todo_list = ""
+        # Check to see if the user included a todo_filename.  If not, check to 
+        # see if one exists at the default location (~/todo.txt).  If there isn't
+        # one at the default location, create one.
+        home = expanduser("~")
+        if todo_filename == "todo.txt":
+            if os.path.isfile(home + "/" + todo_filename):
+                self.todo_filename = home + "/"  + todo_filename
+            else:
+                open(home + "/" + todo_filename, "w+").close() 
+                self.todo_filename = home + "/todo.txt"
+        else:
+            if os.path.isfile(todo_filename):
+                self.todo_filename = todo_filename
+            else:
+                print("Error opening file:\n" + todo_filename)
+                sys.exit(1)
+
         # Menu items (aside from the todo items themselves). An association of
         # text and callback functions. Can't use a dict because we need to
         # preserve order.
@@ -65,7 +82,6 @@ class TodoIndicator(object):
 
         GObject.threads_init() # necessary for threaded notifications
         self.list_updated_flag = False # does the GUI need to catch up?
-        self.todo_filename = os.path.abspath(todo_filename) # absolute path!
         self.todo_path = os.path.dirname(self.todo_filename) # useful
         self.build_indicator() # creates self.ind
 
