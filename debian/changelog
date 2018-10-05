@@ -1,0 +1,23 @@
+todo-indicator (0.5.0-2+git20170309~0) trusty; urgency=medium
+ 
+  * Switch to fork: https://github.com/nick87720z/Todo-Indicator
+ 
+ -- Nagy Gergely <gna@r-us.hu>  Wed, 3 Oct 2018 12:33:24 +0200
+
+todo-indicator (0.5.0-1+git20170309~webupd8~0) trusty; urgency=medium
+ 
+  * Switch to fork: https://github.com/bgblanch/Todo-Indicator
+ 
+ -- Alin Andrei <webupd8@gmail.com>  Fri, 11 Apr 2014 12:33:24 +0300
+
+todo-indicator (0.3.0-1+git20140411~webupd8~5) trusty; urgency=medium
+ 
+  * added Ubuntu mono dark/light icons
+ 
+ -- Alin Andrei <webupd8@gmail.com>  Fri, 11 Apr 2014 12:33:24 +0300
+
+todo-indicator (0.3.0-1+git20140411~webupd8~3) trusty; urgency=medium
+ 
+  * initial debianization
+ 
+ -- Alin Andrei <webupd8@gmail.com>  Fri, 11 Apr 2014 12:33:24 +0300

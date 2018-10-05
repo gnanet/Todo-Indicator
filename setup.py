@@ -21,12 +21,12 @@ from distutils.core import setup
 
 
 setup(name='todo_indicator',
-      version='0.5.0',
+      version='0.5.0-1+git20170309',
       description='Ubuntu app indicator for todo.txt-style todo lists',
-      author='Keith Fancher',
-      author_email='keith.fancher@gmail.com',
+      author='William Blanchard, Keith Fancher',
+      author_email='nick87720z@gmail.com',
       license='GPLv3',
-      url='https://github.com/keithfancher/Todo-Indicator',
+      url='https://github.com/nick87720z/Todo-Indicator',
       packages=['todotxt'],
       package_data={'todotxt': ['img/*']},
       scripts=['todo_indicator.py'],

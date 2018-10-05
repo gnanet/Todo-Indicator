@@ -4,7 +4,7 @@ TODO INDICATOR
 An Ubuntu app indicator for todo.txt-style todo lists. More info about todo.txt
 here: http://todotxt.com/
 
-![Todo Indicator indicating](https://raw.github.com/keithfancher/Todo-Indicator/master/todo_indicator_shot.png)
+![Todo Indicator indicating](https://raw.github.com/nick87720z/Todo-Indicator/master/todo_indicator_shot.png)
 
 
 REQUIREMENTS
@@ -20,7 +20,7 @@ RUNNING THE INDICATOR DIRECTLY
 ------------------------------
 You can clone the git repo thusly:
 
-    $ git clone git://github.com/keithfancher/Todo-Indicator.git
+    $ git clone git://github.com/nick87720z/Todo-Indicator.git
 
 Then just run the `todo_indicator.py` script within that directory:
 
@@ -31,7 +31,7 @@ INSTALLING THE INDICATOR WITH PIP
 ---------------------------------
 You can also install with pip:
 
-    $ sudo pip install https://github.com/keithfancher/Todo-Indicator/tarball/master
+    $ sudo pip install https://github.com/nick87720z/Todo-Indicator/tarball/master
 
 This will install the required files in the default prefix (usually
 `/usr/local/lib` and `/usr/local/bin`). You should then find the

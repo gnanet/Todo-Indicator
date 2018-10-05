@@ -1,0 +1,13 @@
+Source: todo-indicator
+Section: utils
+Priority: extra
+Maintainer: Alin Andrei <webupd8@gmail.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.5
+Homepage: https://github.com/nick87720z/Todo-Indicator
+
+Package: todo-indicator
+Architecture: all
+Depends: python, python-appindicator, python-pyinotify, libappindicator3-1, gir1.2-appindicator3-0.1, gir1.2-gtk-3.0, python-gi, libgtk-3-0
+Description: Todo Indicator
+ An Ubuntu app indicator for todo.txt-style todo lists

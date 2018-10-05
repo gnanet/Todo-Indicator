@@ -1,0 +1,32 @@
+This work was packaged for Debian by:
+
+    Alin Andrei <webupd8@gmail.com> on Fri, 11 Apr 2014 12:33:24 +0300
+
+It was downloaded from:
+
+    https://github.com/nick87720z/Todo-Indicator
+
+Upstream Author(s):
+
+   Keith Fancher
+   William Blanchard
+
+Copyright:
+
+    Copyright (C) 2014 Keith Fancher
+    Copyright (C) 2017 William Blanchard
+
+
+License:
+
+    This software is licensed under the GPL v 3
+
+    see "/usr/share/common-licenses/GPL-3"
+
+The Debian packaging is:
+
+    Copyright (C) 2014 Alin Andrei <webupd8@gmail.com>
+
+and is licensed under the GPL version 3,
+see "/usr/share/common-licenses/GPL-3"
+

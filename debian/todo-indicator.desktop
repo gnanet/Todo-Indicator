@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/todo-indicator todo.txt
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Todo Indicator
+Comment=An Ubuntu app indicator for todo.txt-style todo lists
